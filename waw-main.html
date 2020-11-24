@@ -115,24 +115,36 @@ font-family:Arial, sans-serif !important;
     display: flex;
     flex-direction: column;
     width: auto;
+    align-items: center;
 }
 #profile_grid h6 {
     text-transform: none;
 }
-.profile_row {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-around;
-}
 .profile_cell {
-    width: 45%;
     display: flex;
     border: 1px solid lightgray;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 80%;
 }
-.profile_cell img {
-    width: 33%;
+.profile_avatar {
+    display: flex;
+    margin-right: 3%;
+    width: 45%;
+}
+.profile_avatar img {
+    height: auto;
+}
+.profile_minitext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 3%;
+}
+.profile_minitext span {
+    padding-bottom: 15px;
 }
 
 .hgroup-wrap{
@@ -393,114 +405,104 @@ body.custom-background { background-color: #e1e1e1; }
 
 <!-- TODO fix links in the read more buttons!!!-->
 <div id="profile_grid">
-    <div class="profile_row">
-        <div class="profile_cell">
-            <img class="profile_avatar" src="https://i.postimg.cc/RZzDBQmH/20181121-122001.jpg"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header">Arlinda Ibrahimllari</h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
-        </div>
-        <div class="profile_cell">
-            <img class="profile_avatar" src="https://i.postimg.cc/Jhp6ZfkN/gjinali.jpg"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header">Enkelejda Gjinali</h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
+    <div class="profile_cell">
+        <img class="profile_avatar" src="https://i.postimg.cc/RZzDBQmH/20181121-122001.jpg"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header">Arlinda Ibrahimllari</h6>
+            <span class="profile_blurb">Arlinda Ibrahimllari built her career upon being the only, first, or best wherever she goes.</span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
         </div>
     </div>
-    <div class="profile_row">
-        <div class="profile_cell">
-            <img class="profile_avatar" src="https://i.postimg.cc/BncnCgNZ/10.jpg"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header">Dajana Disha</h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
-        </div>
-        <div class="profile_cell">
-            <img class="profile_avatar" src="https://i.postimg.cc/hjbYy2hs/Frida-Bahja-Website-Profile-Picture-2.jpg"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header">Frida Bahja</h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
+    <div class="profile_cell">
+        <img class="profile_avatar" src="https://i.postimg.cc/Jhp6ZfkN/gjinali.jpg"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header">Enkelejda Gjinali</h6>
+            <span class="profile_blurb">Professor Enkelejda Gjinali has proven herself as a key mentor to hundreds of students at the Polytechnic University of Tirana.</span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
         </div>
     </div>
-    <div class="profile_row">
-        <div class="profile_cell">
-            <img class="profile_avatar"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header">Mary Danielson</h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
-        </div>
-        <div class="profile_cell">
-            <img class="profile_avatar"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header">Jami Walsh</h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
+    <div class="profile_cell">
+        <img class="profile_avatar" src="https://i.postimg.cc/BncnCgNZ/10.jpg"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header">Dajana Disha</h6>
+            <span class="profile_blurb"></span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
         </div>
     </div>
-    <div class="profile_row">
-        <div class="profile_cell">
-            <img class="profile_avatar" src="https://i.postimg.cc/QdXR2Gc7/fationa-small-Picture.jpg"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header">Fationa Sinojmeri</h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
-        </div>
-        <div class="profile_cell">
-            <img class="profile_avatar" src="https://i.postimg.cc/DfG0ZsHg/lejla-lab.jpg"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header">Lejla Arifovic</h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
+    <div class="profile_cell">
+        <img class="profile_avatar" src="https://i.postimg.cc/hjbYy2hs/Frida-Bahja-Website-Profile-Picture-2.jpg"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header">Frida Bahja</h6>
+            <span class="profile_blurb">Frida Bahja lives her life by not fearing other people’s opinions and chasing the opportunities she loves.</span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
         </div>
     </div>
-    <div class="profile_row">
-        <div class="profile_cell">
-            <img class="profile_avatar"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header"></h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
+    <div class="profile_cell">
+        <img class="profile_avatar"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header">Mary Danielson</h6>
+            <span class="profile_blurb"></span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
         </div>
-        <div class="profile_cell">
-            <img class="profile_avatar"/>
-            <div class="profile_minitext">
-                <h6 class="profile_header"></h6>
-                <span class="profile_blurb"></span>
-                <a href="http://shukalb.al/en/programe/waw/">
-                    <button class="profile_link">Read more</button>
-                </a>
-            </div>
+    </div>
+    <div class="profile_cell">
+        <img class="profile_avatar"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header">Jami Walsh</h6>
+            <span class="profile_blurb"></span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
+        </div>
+    </div>
+    <div class="profile_cell">
+        <img class="profile_avatar" src="https://i.postimg.cc/QdXR2Gc7/fationa-small-Picture.jpg"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header">Fationa Sinojmeri</h6>
+            <span class="profile_blurb">Fationa Sinojmeri is motivated by her love for people and desire to use her career to benefit everyone.</span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
+        </div>
+    </div>
+    <div class="profile_cell">
+        <img class="profile_avatar" src="https://i.postimg.cc/DfG0ZsHg/lejla-lab.jpg"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header">Lejla Arifović</h6>
+            <span class="profile_blurb">In a field she never expected to be in, Lejla Arifović has found herself working everyday for the improvement of wastewater treatment in her country.</span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
+        </div>
+    </div>
+    <div class="profile_cell">
+        <img class="profile_avatar"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header"></h6>
+            <span class="profile_blurb"></span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
+        </div>
+    </div>
+    <div class="profile_cell">
+        <img class="profile_avatar"/>
+        <div class="profile_minitext">
+            <h6 class="profile_header"></h6>
+            <span class="profile_blurb"></span>
+            <a href="http://shukalb.al/en/programe/waw/">
+                <button class="profile_link">Read more</button>
+            </a>
         </div>
     </div>
 </div>
