@@ -107,9 +107,34 @@ text-transform: none;
 body p, input, textarea, article p, h1,h2,h3,h4,h5,h6 {
 font-family:Arial, sans-serif !important;
 }
+
 #primary p {
     text-align: justify;
 }
+#profile_grid {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+#profile_grid h6 {
+    text-transform: none;
+}
+.profile_row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.profile_cell {
+    width: 45%;
+    display: flex;
+    border: 1px solid lightgray;
+    margin-bottom: 30px;
+}
+.profile_cell img {
+    width: 33%;
+}
+
 .hgroup-wrap{
 padding-top: 0;
 padding-bottom: 10px;
@@ -278,6 +303,7 @@ body.custom-background { background-color: #e1e1e1; }
 </li>
 <li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-201"><a href="http://shukalb.al/en/programe/">Programs</a>
 <ul class="sub-menu">
+<li id="menu-item-206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="http://shukalb.al/en/programe/waw-main/">Women of Water</a></li> <!-- to be fixed when uploaded. falamanderit!! -->
 <li id="menu-item-206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="http://shukalb.al/en/programe/miqte-e-ujit/">Friends of Water</a></li>
 <li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a href="http://shukalb.al/en/programe/dita-boterore-e-monitorimit-te-ujit/">World Water Monitoring Challenge Program</a></li>
 <li id="menu-item-207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-207"><a href="http://shukalb.al/en/programe/parani-i-shkences-ne-shkollen-e-mesme/">High school “Science Fair” Program</a></li>
@@ -362,9 +388,122 @@ body.custom-background { background-color: #e1e1e1; }
 <br/>
 
 <p style="color: #3366ff;"><strong>Profiles</strong></p>
-<p>The students interviewed female water professionals in the Western Balkans and United States to learn about their education, careers, and experiences in the industry. Each woman had a profile created to highlight their stories - click an image to see more!</p>
-
+<p>The students interviewed female water professionals in the Western Balkans and United States to learn about their education, careers, and experiences in the industry. Each woman had a profile created to highlight their stories - click "Read more" to see more!</p>
 <br/>
+
+<!-- TODO fix links in the read more buttons!!!-->
+<div id="profile_grid">
+    <div class="profile_row">
+        <div class="profile_cell">
+            <img class="profile_avatar" src="https://i.postimg.cc/RZzDBQmH/20181121-122001.jpg"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header">Arlinda Ibrahimllari</h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+        <div class="profile_cell">
+            <img class="profile_avatar" src="https://i.postimg.cc/Jhp6ZfkN/gjinali.jpg"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header">Enkelejda Gjinali</h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="profile_row">
+        <div class="profile_cell">
+            <img class="profile_avatar" src="https://i.postimg.cc/BncnCgNZ/10.jpg"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header">Dajana Disha</h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+        <div class="profile_cell">
+            <img class="profile_avatar" src="https://i.postimg.cc/hjbYy2hs/Frida-Bahja-Website-Profile-Picture-2.jpg"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header">Frida Bahja</h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="profile_row">
+        <div class="profile_cell">
+            <img class="profile_avatar"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header">Mary Danielson</h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+        <div class="profile_cell">
+            <img class="profile_avatar"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header">Jami Walsh</h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="profile_row">
+        <div class="profile_cell">
+            <img class="profile_avatar" src="https://i.postimg.cc/QdXR2Gc7/fationa-small-Picture.jpg"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header">Fationa Sinojmeri</h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+        <div class="profile_cell">
+            <img class="profile_avatar" src="https://i.postimg.cc/DfG0ZsHg/lejla-lab.jpg"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header">Lejla Arifovic</h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="profile_row">
+        <div class="profile_cell">
+            <img class="profile_avatar"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header"></h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+        <div class="profile_cell">
+            <img class="profile_avatar"/>
+            <div class="profile_minitext">
+                <h6 class="profile_header"></h6>
+                <span class="profile_blurb"></span>
+                <a href="http://shukalb.al/en/programe/waw/">
+                    <button class="profile_link">Read more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div id="attachment_339" style="width: 287px" class="wp-caption alignright"><a href=""><img class=" wp-image-339" src="" alt="" sizes="(max-width: 277px) 100vw, 277px" width="277" height="213"></a><p class="wp-caption-text"></p></div>
